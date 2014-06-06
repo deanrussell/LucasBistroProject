@@ -1,0 +1,206 @@
+  * { margin: 0; padding: 0; }
+html { overflow-y: scroll;}
+body { background:#ffffff; font-size: 13px; color: #666666; font-family: Arial, helvetica, sans-serif;}
+ol, ul { list-style: none; margin: 0;}
+ul li { margin: 0; padding: 0;}
+h1 { margin-bottom: 10px; color: #111111;}	
+a, img { outline: none; border:none; color: #000; font-weight: bold; text-transform: uppercase;}
+p { margin: 0 0 10px; line-height: 1.4em; font-size: 1.2em;}
+img { display: block; margin-bottom: 10px;}
+aside { font-style: italic; font-size: 0.9em;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { 
+    display: block;
+	}
+
+
+/* STRUCTURE YO */
+
+    #wrapper {
+    width: 96%;
+    max-width: 920px;
+    margin: auto;
+    padding: 2%;
+    }
+    #main {
+    width: 48%;
+    margin-right: 4%;
+    float: left;
+    }
+	aside {
+		width: 48%;
+		float: right;
+		}
+
+
+/* NAV SECTION */
+
+/* Logo */
+
+
+
+header h1 {
+height: 70px;
+width: 160px;
+float: left;
+display: block;
+background: url(https://www.saltmoney.org/Assets/images/logos/salt-logo.gif) 0 0 no-repeat;
+text-indent: -9999px
+}
+
+
+
+/* Menu */
+
+header nav {
+float: right;
+margin-top: 40px;
+
+}
+header nav li {
+display: inline;
+margin-left: 15px
+}
+
+nav a {
+position: relative;
+display:block;
+width:120px;
+display: inline;
+color:black;
+font-family: Arial;
+background-color: #ffffff;
+text-align:center;
+padding:6px;
+text-decoration:none;
+text-transform:uppercase;
+}
+nav a:hover
+{
+background-color: #444444;
+color: white;
+padding:10px;
+
+}
+
+
+/* BANNER SECTION */
+
+h2 {
+position: absolute;
+z-index: 99999
+
+}
+#banner {
+position: relative;
+float: left;
+margin-bottom: 15px
+width: 100%
+}
+#banner img {
+width 100%
+}
+h2 {
+position: absolute;
+z-index: 99999
+margin-left: 80px;
+margin-top: 30px;
+Font-size: 3em;
+font-family: 'Italianno', cursive;
+text-indent: 30px
+}
+h3 {
+position: absolute;
+z-index: 99998;
+margin-top: 90px;
+text-indent: 45px
+}
+
+
+/* BODY TILE */
+
+.tile1 {
+background: #e5e5e5;
+padding: 25px
+
+}
+
+.rail1 {
+background: #e5e5e5;
+padding: 20px
+}
+
+
+/* MEDIA QUERIES SECTION */
+
+
+/* Size Queries */
+
+@media screen and (max-width: 1680px) {
+	#banner {
+	float: left;
+	margin-bottom: 15px;
+	width: 100%;
+	}
+
+	#banner img {
+		width: 100%;
+		}
+    }
+
+@media screen and (max-width: 1260px) {
+	#banner {
+	float: left;
+	margin-bottom: 15px;
+	width: 100%;
+	}
+
+	#banner img {
+		width: 100%;
+		}
+    }
+@media screen and (max-width: 1080px) {
+	#banner {
+	float: left;
+	margin-bottom: 15px;
+	width: 100%;
+	}
+
+	#banner img {
+		width: 100%;
+		}
+    }
+@media screen and (max-width: 960px) {
+	#banner {
+	float: left;
+	margin-bottom: 15px;
+	width: 100%;
+	}
+
+	#banner img {
+		width: 100%;
+		}
+    }
+
+@media screen and (max-width: 640px) {
+	#banner {
+	float: left;
+	margin-bottom: 15px;
+	width: 66.66%;
+	}
+
+	#banner img {
+		width: 66.66%;
+		}
+@media screen and (min-width: 320) and (max-width: 460px) {
+	#banner {
+	float: left;
+	margin-bottom: 15px;
+	width: 33.33%;
+	}
+
+	#banner img {
+		width: 33.33%;
+		}
+
+
