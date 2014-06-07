@@ -1,13 +1,12 @@
   * { margin: 0; padding: 0; }
 html { overflow-y: scroll;}
-body { background:#ffffff; font-size: 13px; color: #666666; font-family: Arial, helvetica, sans-serif;}
+body { background:#ffffff; font-size: 13px; color: #666666; font-family: 'Lato', helvetica, sans-serif;}
 ol, ul { list-style: none; margin: 0;}
 ul li { margin: 0; padding: 0;}
 h1 { margin-bottom: 10px; color: #111111;}	
 a, img { outline: none; border:none; color: #000; font-weight: bold; text-transform: uppercase;}
 p { margin: 0 0 10px; line-height: 1.4em; font-size: 1.2em;}
 img { display: block; margin-bottom: 10px;}
-aside { font-style: italic; font-size: 0.9em;}
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section { 
     display: block;
@@ -17,17 +16,17 @@ footer, header, hgroup, menu, nav, section {
 /* STRUCTURE YO */
 
     #wrapper {
-    width: 96%;
-    max-width: 920px;
-    margin: auto;
-    padding: 2%;
+    	width: 96%;
+    	max-width: 920px;
+    	margin: auto;
+    	padding: 2%;
     }
     #main {
-    width: 48%;
-    margin-right: 4%;
-    float: left;
+    	width: 48%;
+    	margin-right: 4%;
+    	float: left;
     }
-	aside {
+	#main2 {
 		width: 48%;
 		float: right;
 		}
@@ -40,12 +39,12 @@ footer, header, hgroup, menu, nav, section {
 
 
 header h1 {
-height: 70px;
-width: 160px;
-float: left;
-display: block;
-background: url(https://www.saltmoney.org/Assets/images/logos/salt-logo.gif) 0 0 no-repeat;
-text-indent: -9999px
+	height: 80px;
+	width: 250px;
+	float: left;
+	display: block;
+	background: url(images/bistro-small.png) 0 0 no-repeat;
+	text-indent: -9999px
 }
 
 
@@ -53,33 +52,33 @@ text-indent: -9999px
 /* Menu */
 
 header nav {
-float: right;
-margin-top: 40px;
+	float: right;
+	margin-top: 40px;
 
 }
 header nav li {
-display: inline;
-margin-left: 15px
-}
+	display: inline;
+	margin-left: 15px;
+
 
 nav a {
-position: relative;
-display:block;
-width:120px;
-display: inline;
-color:black;
-font-family: Arial;
-background-color: #ffffff;
-text-align:center;
-padding:6px;
-text-decoration:none;
-text-transform:uppercase;
+	position: relative;
+	display:block;
+	width:120px;
+	display: inline;
+	color:black;
+	font-family: Arial;
+	background-color: #ffffff;
+	text-align:center;
+	padding:6px;
+	text-decoration:none;
+	text-transform:uppercase;
 }
 nav a:hover
 {
-background-color: #444444;
-color: white;
-padding:10px;
+	background-color: #444444;
+	color: white;
+	padding:10px;
 
 }
 
@@ -87,47 +86,102 @@ padding:10px;
 /* BANNER SECTION */
 
 h2 {
-position: absolute;
-z-index: 99999
+	position: absolute;
+	z-index: 99999
 
 }
 #banner {
-position: relative;
-float: left;
-margin-bottom: 15px
-width: 100%
+	position: relative;
+	float: left;
+	margin-bottom: 15px
+	width: 100%
 }
 #banner img {
-width 100%
+	width: 100%
 }
-h2 {
+/*h2 {
 position: absolute;
 z-index: 99999
 margin-left: 80px;
 margin-top: 30px;
-Font-size: 3em;
-font-family: 'Italianno', cursive;
+Font-size: 1.5em;
+font-family: 'Lato', sans-serif;
 text-indent: 30px
+} */
+h2 { 
+   position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%; 
+}
+h2 span {
+	position: absolute;
+	z-index: 99999;
+	Font-size: 1em;
+	display: inline;
+	font-family: 'Lato', sans-serif;
+	color: white;
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 15px; 
 }
 h3 {
-position: absolute;
-z-index: 99998;
-margin-top: 90px;
-text-indent: 45px
+	position: absolute;
+	z-index: 99998;
+    top: 200px; 
+  	left: 0; 
+ 	width: 100%; 
+	font-family: 'Lato', sans-serif;
+	font-style: italic;
 }
 
 
 /* BODY TILE */
 
-.tile1 {
-background: #e5e5e5;
-padding: 25px
+.tile {
+	background: #e5e5e5;
+	padding: 25px;
+	margin-bottom: 50px
+}
+
+.tile2 {
+	background: #e5e5e5;
+	padding: 25px;
+	margin-bottom: 50px
+}
+
+.tile:hover {
+	background: url(images/menu.jpg) 0 0 no-repeat;
+	color: #ffffff;
+
+}
+.tile2:hover {
+	background: url(images/drinks.jpg) 0 0 no-repeat;
+	color: #ffffff;
 
 }
 
-.rail1 {
-background: #e5e5e5;
-padding: 20px
+
+
+section h1 { 
+	font-family: 'Medula One', serif;
+	font-size: 3em;}	
+
+section h1:hover {
+	color: #faac4c;
+}
+
+
+
+/* FOOTER */
+
+footer {
+  clear: both;
+    position: relative;
+    z-index: 10;
+    height: 3em;
+    margin-top: -3em
 }
 
 
@@ -169,6 +223,14 @@ padding: 20px
 	#banner img {
 		width: 100%;
 		}
+		h2 span {
+			width: 23%;
+			font-size: .9em;
+			padding: 13.5px;
+			text-overflow: ellipsis;
+			 white-space: nowrap;
+  			overflow: hidden
+		}
     }
 @media screen and (max-width: 960px) {
 	#banner {
@@ -179,6 +241,15 @@ padding: 20px
 
 	#banner img {
 		width: 100%;
+
+		}
+		h2 span {
+			width: 20%;
+			font-size: .75em;
+			padding: 10px;
+			text-overflow: ellipsis;
+			 white-space: nowrap;
+  			overflow: hidden
 		}
     }
 
@@ -192,6 +263,15 @@ padding: 20px
 	#banner img {
 		width: 66.66%;
 		}
+			h2 span {
+			text-overflow: ellipsis;
+			 white-space: nowrap;
+  			overflow: hidden
+			width: 20%;
+			font-size: .6em;
+			padding: 7px;
+			top: 100;
+		}
 @media screen and (min-width: 320) and (max-width: 460px) {
 	#banner {
 	float: left;
@@ -201,6 +281,15 @@ padding: 20px
 
 	#banner img {
 		width: 33.33%;
+		}
+				h2 span {
+			text-overflow: ellipsis;
+			 white-space: nowrap;
+  			overflow: hidden
+			width: 20%;
+			font-size: .5em;
+			padding: 5px;
+			top: 80;
 		}
 
 
