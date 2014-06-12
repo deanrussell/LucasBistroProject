@@ -1,3 +1,7 @@
+  
+
+/*DEFAULT SHIZ DAWG */
+
   * { margin: 0; padding: 0; }
 html { overflow-y: scroll;}
 body { background:#ffffff; font-size: 13px; color: #666666; font-family: 'Lato', helvetica, sans-serif;}
@@ -46,6 +50,18 @@ header h1 {
 	background: url(images/bistro-small.png) 0 0 no-repeat;
 	text-indent: -9999px
 }
+
+header h3 {
+	height: 80px;
+	width: 250px;
+	margin-left: 490px;
+	margin-top: -50px;
+	float: center;
+	display: block;
+	background: url(images/bistro-small.png) 0 0 no-repeat;
+	text-indent: -9999px
+}
+
 
 
 
@@ -173,8 +189,19 @@ section h1:hover {
 }
 
 
+.error1 { 
+	font-family: 'Medula One', serif;
+	font-size: 3em;
+	text-align: center;
+	margin-top: 250px;}
 
-FOOTER 
+.error2 { 
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	text-align: center;
+	margin-top: 100px}
+
+/* FOOTER */ 
 
 footer {
   clear: both;
@@ -188,6 +215,8 @@ footer {
 
 
 /* Size Queries */
+
+/* BITCHES LOVE QUERIES */
 
 @media screen and (max-width: 1680px) {
 	#banner {
@@ -292,3 +321,4 @@ footer {
 		}
 
 
+/* Thanks to one of the devs at work for unwittingly helping me with this */
